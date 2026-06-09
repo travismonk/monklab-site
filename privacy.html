@@ -24,12 +24,14 @@
   <h2>Pseudonymous Identity</h2>
   <p>
     Users are represented in Byblos by pseudonymous local user identifiers, display names,
-    and colors. Byblos does not attempt to determine a user's real-world identity.
+    and colors. Byblos does not require users to provide real names, email addresses, or
+    account credentials, and Byblos does not attempt to determine a user's real-world identity.
   </p>
   <p>
-    Workspace content may still reveal personal information if users voluntarily include it,
-    such as personal websites, social media pages, repositories, names, or other identifying
-    information in webpage URLs, titles, annotations, or workspace content.
+    Workspace content may still reveal personal information if users voluntarily include it.
+    For example, because Byblos synchronizes webpage URLs and titles in shared workspaces,
+    a workspace may reveal that a user visited a personal website, social media profile,
+    public repository, or other page connected to their real-world identity.
   </p>
 
   <h2>Information Stored Locally</h2>
@@ -39,13 +41,13 @@
     integration data. This local browser state is not synchronized with collaborators.
   </p>
 
-  <h2>Information Synchronized for Shared Workspaces</h2>
-  <p>
-    When a workspace is shared, Byblos synchronizes workspace data using Cloudflare
-    synchronization infrastructure. Synchronized workspace data may include webpage URLs,
-    node titles, workspace structure, workspace names, non-chat annotations, pseudonymous
-    user identifiers, display names, and user colors.
-  </p>
+  <h2>Information Synchronized by Byblos</h2>
+    <p>
+    Byblos may synchronize workspace data for backup, use across multiple devices,
+    and collaboration with other users. Shared workspace data is available to users
+    who have the access token for that workspace. Shared workspace data is available to users who
+    have access to that workspace. Chat messages are separately protected using a chat encryption key.
+    </p>
 
   <h2>Encrypted Chat Messages</h2>
   <p>
