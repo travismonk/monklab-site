@@ -10,7 +10,7 @@ const steps = [
   },
   {
     badge: "Step 2",
-    title: "Open a new Chrome tab and visit any page.",
+    title: "Open a new Chrome tab and visit any page like google.com.",
     points: [
       "Notice the red outline around that page.",
       "Notice the promotion bar below.",
@@ -23,7 +23,7 @@ const steps = [
     points: [
       "Some pages you don't want to remember, keep or share.",
       "Doomscrolling.  News articles.  Random searches.  Rabbit holes.",
-      "Leave those pages in Chrome."
+      "Use Chrome tabs for these pages."
     ]
   },
   {
@@ -32,34 +32,43 @@ const steps = [
     points: [
       "Some pages are worth keeping.",
       "A listing you like.  A thoughtful article.  A funny video.",
-      "Byblos tabs are for those pages."
+      "Use Byblos tabs for these pages."
     ]
   },
   {
     badge: "Step 5",
-    title: "Byblos tabs can remember things.",
-    points: [
-      "Click the ⭐️ rating button.",
-      "Your rating is now attached to this page.",
-      "You can sort and filter pages based on the annotations you write."
-    ]
-  },
-  {
-    badge: "Step 6",
-    title: "Byblos remembers how you got there.",
-    points: [
-      "Click a link in this Byblos tab.",
-      "The new page appears in the tree on the right.",
-      "Byblos tabs let you retrace your thread of thought."
-    ]
-  },
-  {
-    badge: "Step 7",
     title: "Tabs can be switched.",
     points: [
       "Click the demote button in the annotation bar.",
       "The Byblos tab becomes a Chrome tab.",
       "Click promote to switch back."
+    ]
+  },
+  {
+    badge: "Step 6",
+    title: "Byblos tabs can remember things.",
+    points: [
+      "Click the ⭐️ rating button on the bar below.",
+      "See the ⭐️ badges? Your rating is now attached to this page.",
+      "You can sort and filter pages based on the annotations you write."
+    ]
+  },
+  {
+    badge: "Step 7",
+    title: "Chrome tabs behave as you expect.",
+    points: [
+      "Do not support annotations.",
+      "Navigations are not remembered by Byblos.",
+      "Fast, disposable, carefree browsing."
+    ]
+  },
+  {
+    badge: "Step 8",
+    title: "Byblos tabs visualize your browsing.",
+    points: [
+      "After this tutorial, click a link in this page.",
+      "The new page appears in your tree at the right.",
+      "Byblos tabs let you retrace your thread of thought."
     ]
   }
 ];
