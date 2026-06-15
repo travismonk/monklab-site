@@ -10,9 +10,9 @@ const steps = [
   },
   {
     badge: "Step 2",
-    title: "Open a new Chrome tab and visit any page like google.com.",
+    title: "Click demote in the annotation bar below.",
     points: [
-      "Notice the red outline around that page.",
+      "Notice the red outline around this page.",
       "Notice the promotion bar below.",
       "Red outline + promotion bar = Chrome tab."
     ]
@@ -28,20 +28,20 @@ const steps = [
   },
   {
     badge: "Step 4",
+    title: "Tabs can always be switched.",
+    points: [
+      "Click the promote button below.",
+      "The Chrome tab becomes a Byblos tab again.",
+      "The tabs are always fully fungible."
+    ]
+  },
+  {
+    badge: "Step 5",
     title: "The purpose of Byblos tabs.",
     points: [
       "Some pages are worth keeping.",
       "A listing you like.  A thoughtful article.  A funny video.",
       "Use Byblos tabs for these pages."
-    ]
-  },
-  {
-    badge: "Step 5",
-    title: "Tabs can be switched.",
-    points: [
-      "Click the demote button in the annotation bar.",
-      "The Byblos tab becomes a Chrome tab.",
-      "Click promote to switch back."
     ]
   },
   {
@@ -66,7 +66,7 @@ const steps = [
     badge: "Step 8",
     title: "Byblos tabs visualize your browsing.",
     points: [
-      "After this tutorial, click a link in this page.",
+      "After this tutorial, click a link at the bottom of this page.",
       "The new page appears in your tree at the right.",
       "Byblos tabs let you retrace your thread of thought."
     ]
