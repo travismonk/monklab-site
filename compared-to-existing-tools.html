@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compared to Existing Tools | Byblos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Byblos turns webpages into collaborative workspaces</a>
+    <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="privacy.html">Privacy</a></nav>
+  </header>
+  <main class="page-main">
+    <a class="back-link" href="index.html">Back to hub</a>
+    <article class="content-card">
+      <p class="eyebrow">Why Byblos</p>
+      <h1>Compared To Existing Tools</h1>
+      <p>Most people already have a system for dealing with webpages.</p>
+      <p>The system is usually not a single tool. Pages get saved in bookmarks. Notes live in a notes application. Discussions happen in a chat application. Measurements end up in a spreadsheet. Tasks go into a task manager. Browser history preserves where you went. Eventually, all of those tools become part of the same workflow.</p>
+      <p>The tools themselves are often excellent. The problem is that they were built for notes, messaging, spreadsheets, documents, bookmarks, or browser history. They were not built around webpages. As a result, people end up adapting those tools to solve problems they were never designed to solve.</p>
+
+      <h2>Chat Applications</h2>
+      <p>WhatsApp, Discord, Slack, Teams, Signal, Telegram, and similar applications are designed for conversations. Webpages usually appear inside those systems as links that people discuss.</p>
+      <p>This works well when the discussion is small. The problems begin when the number of pages grows. Suppose five Airbnb listings are discussed over the course of a week in a WhatsApp group. A month later, try reading the conversation again. Can you easily determine which messages refer to which listing? Can you tell which listing people preferred? Can you tell why one option was rejected and another was chosen? Usually the pages survive and the conversation survives. The relationship between them becomes difficult to reconstruct.</p>
+      <p>The problem is not that WhatsApp is bad. WhatsApp was built for messaging. It was never intended to become a workspace for discussing webpages.</p>
+      <p>Discord, Slack, and other channel-based systems solve part of this problem by introducing channels, threads, pinned messages, and other organizational tools. A determined group could go much further and create a channel for every page they care about. At that point, the discussion is effectively attached to the page.</p>
+      <p>The interesting question is what happens next.</p>
+      <p>Suppose a page has accumulated fourteen comments, three reactions, two ratings, and a follow-up reminder. Should that page appear in an inbox because somebody needs to respond? Should it be easier to find because several people rated it highly? Should it be possible to sort pages by discussion activity, filter pages by authorship, or query pages based on the information attached to them?</p>
+      <p>Discord and Slack were not built to treat webpages as structured, queryable objects. The page exists, the discussion exists, and the relationship between them is maintained through conventions, messages, pinned links, bots, databases, and human discipline. None of this is impossible to build. In fact, many teams do exactly that. But once channels correspond to webpages, bots maintain metadata, and databases track state, the system has effectively become a page-centric workspace.</p>
+      <p>At that point, a surprising amount of effort has been spent creating a core functionality of Byblos. But the webpage still lives somewhere else. The discussion system knows about the discussion. The browser knows about the page. The metadata lives in a database. The reminders live somewhere else. The relationship between all of those things must be maintained explicitly.</p>
+      <p>Byblos starts from a different assumption. The webpage is the primary object. Discussions, ratings, reactions, measurements, reminders, and navigation all accumulate around the page itself. Instead of building systems that point at webpages, Byblos builds on top of webpages.</p>
+
+      <h2>Notes Applications</h2>
+      <p>Obsidian, Notion, Apple Notes, Google Docs, and similar tools are designed for writing and organizing information. Many people use them to save links alongside their thoughts.</p>
+      <p>This works well until the notes and the browsing process become separated from one another. The note survives. The page survives. The path that led to the page often disappears.</p>
+      <p>A note might tell you what you thought. It usually cannot tell you how you arrived there, what alternatives you considered, what your collaborators thought, or where the page sits within a larger investigation.</p>
+      <p>The problem is not that note-taking applications are bad. They were built for notes, not browsing.</p>
+      <p>Byblos keeps notes attached to pages and preserves the navigation that led to them.</p>
+
+      <h2>Bookmark Managers</h2>
+      <p>Bookmarks, Raindrop, Pocket, and similar tools are designed to save pages. They solve that problem extremely well.</p>
+      <p>The challenge begins when the page itself is no longer enough. You may want to compare pages, discuss them, rate them, measure them, organize them, or make decisions about them.</p>
+      <p>A bookmark tells you that the page mattered. It rarely tells you why.</p>
+      <p>The problem is not that bookmark managers are bad. They were built to save pages, not preserve context.</p>
+      <p>Byblos preserves the page, the context surrounding the page, and the decisions that emerged from it.</p>
+
+      <h2>Annotation Tools</h2>
+      <p>Tools such as Hypothesis, Diigo, and Memex are designed to let users annotate webpages.</p>
+      <p>Byblos shares some of those capabilities, but annotations do not exist in isolation. Ratings affect sorting. Keywords affect filtering. Discussions remain attached to pages. The tree displays annotation state directly. Annotations become part of navigation, organization, and collaboration.</p>
+      <p>The problem is not that annotation tools are bad. They were built for annotation.</p>
+      <p>Byblos treats annotation as part of a larger browsing environment.</p>
+
+      <h2>The Pattern</h2>
+      <p>The same pattern appears repeatedly.</p>
+      <p>Chat applications were built for conversations. Notes applications were built for notes. Bookmark managers were built for saving pages. Annotation tools were built for annotation. Spreadsheets were built for structured data.</p>
+      <p>People combine all of these tools because the webpage sits at the center of a much larger process. The page needs discussion, notes, ratings, measurements, organization, navigation, and collaboration. Those capabilities exist today. They simply live in different systems.</p>
+      <p>Byblos is not trying to replace all of these tools individually. It is trying to make webpages the primary object around which those capabilities are organized.</p>
+    </article>
+  </main>
+</body>
+</html>
