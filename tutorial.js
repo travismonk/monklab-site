@@ -10,7 +10,7 @@ const steps = [
   },
   {
     badge: "Step 2",
-    title: "Click demote in the annotation bar below.",
+    title: "Click demote, the tree icon, in the annotation bar below.",
     points: [
       "Notice the red outline around this page.",
       "Notice the promotion bar below.",
@@ -37,15 +37,6 @@ const steps = [
   },
   {
     badge: "Step 5",
-    title: "The purpose of Byblos tabs.",
-    points: [
-      "Some pages are worth keeping.",
-      "A listing you like.  A thoughtful article.  A funny video.",
-      "Use Byblos tabs for these pages."
-    ]
-  },
-  {
-    badge: "Step 6",
     title: "Byblos tabs can remember things.",
     points: [
       "Click the ⭐️ rating button on the bar below.",
@@ -54,7 +45,7 @@ const steps = [
     ]
   },
   {
-    badge: "Step 7",
+    badge: "Step 6",
     title: "Chrome tabs behave as you expect.",
     points: [
       "Do not support annotations.",
@@ -63,12 +54,12 @@ const steps = [
     ]
   },
   {
-    badge: "Step 8",
+    badge: "Step 7",
     title: "Byblos tabs visualize your browsing.",
     points: [
       "After this tutorial, click a link at the bottom of this page.",
       "The new page appears in your tree at the right.",
-      "Byblos tabs let you retrace your thread of thought."
+      "Byblos tabs let you record and retrace your thread of thought."
     ]
   }
 ];
