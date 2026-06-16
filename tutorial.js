@@ -61,9 +61,10 @@ const steps = [
     badge: "Step 7",
     title: "Byblos tabs visualize your browsing.",
     points: [
-      "After this tutorial, click a link at the bottom of this page.",
+      "Close this tutorial and click a link at the bottom of this page.",
       "The new page appears in your tree at the right.",
-      "Byblos tabs let you record and retrace your thread of thought."
+      "Byblos tabs let you record and retrace your thread of thought.",
+      "Happy Browsing.  - Monklab"
     ]
   }
 ];
