@@ -9,30 +9,143 @@
 <body>
   <header class="site-header">
     <a class="brand" href="./">Byblos turns webpages into collaborative workspaces</a>
-    <nav aria-label="Main navigation"><a href="./">Home</a><a href="privacy.html">Privacy</a></nav>
+    <nav aria-label="Main navigation">
+      <details class="header-menu">
+        <summary aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </summary>
+        <div class="header-menu-panel">
+          <section>
+            <h2>Features</h2>
+            <a href="annotations.html">Annotations</a>
+            <a href="sort-filter.html">Sort &amp; Filter</a>
+            <a href="the-tree.html">The Tree</a>
+            <a href="chat-and-tracker-inbox.html">Chat &amp; Tracker Inbox</a>
+            <a href="sharing-workspaces.html">Sharing Workspaces</a>
+          </section>
+          <section>
+            <h2>Why Byblos</h2>
+            <a href="value-thesis.html">Value Thesis</a>
+            <a href="compared-to-existing-tools.html">Compared to Existing Tools</a>
+            <a href="common-use-cases.html">Common Use Cases</a>
+          </section>
+          <section>
+            <h2>Trust</h2>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="faq.html">FAQ</a>
+            <a href="about-monklab.html">About Monklab</a>
+          </section>
+        </div>
+      </details>
+    </nav>
   </header>
   <main class="page-main">
     <a class="back-link" href="./">Back to hub</a>
     <article class="content-card">
       <p class="eyebrow">Features</p>
       <h1>Annotations</h1>
-      <p>Many browser extensions let you write notes on webpages. Byblos is not really about writing notes. It is about what happens after you write them.</p>
-      <p>Normally, your thoughts and the pages they refer to drift apart. You save a page in one place, leave a note somewhere else, discuss it in a chat application, and eventually forget how those pieces fit together. Months later, you might find the page but not remember why it mattered, or find the note and have no idea what it was referring to.</p>
-      <p>Byblos keeps those things together. Notes, ratings, reactions, measurements, discussions, and reminders all live directly on the pages they describe. The page becomes more than a URL. It becomes a record of what you and your collaborators thought about it.</p>
-
-      <h2>Annotations Become Navigation</h2>
-      <p>This becomes more useful as your workspace grows. A rating is not just a rating. A note is not just a note. They become part of how you navigate the workspace.</p>
-      <p>The tree can show information from annotations without requiring you to open every page. Maybe you don't remember where a page is in the tree, but you do remember that you left a heart and a rating on it. Suddenly that page is easy to find. You can also sort and filter pages using the information you have recorded. Pages that would otherwise disappear into a pile of bookmarks become easier to find because you left context behind.</p>
-
-      <h2>Chats about a webpage should be on the webpage</h2>
-      <p>Most conversations about webpages happen somewhere else. Someone sends a link in a chat application and the discussion becomes separated from the page being discussed. A few weeks later, nobody remembers which conversation belonged to which page.</p>
-      <p>Byblos keeps the conversation on the page itself. When you return to the page, the discussion is still there. When you share the page with someone else, the discussion comes with it.</p>
-
+      
+      <p>
+        Most people think of annotations as notes attached to webpages. In Byblos,
+        annotations solve three practical problems: organizing pages, finding pages
+        again later, and discussing pages with other people.
+      </p>
+      
+      <h2>Sort and Filter</h2>
+      
+      <p>
+        A browser treats webpages as URLs. Byblos treats webpages as objects that can
+        accumulate information. Ratings, keywords, measurements, costs, priorities,
+        reactions, and notes become properties of a page rather than information that
+        lives somewhere else.
+      </p>
+      
+      <p>
+        Once information is attached to pages, it can be used to organize them.
+        Vacation listings can be sorted by cost. Research papers can be filtered by
+        topic. Products can be ranked by rating. Pages that would otherwise look
+        identical to the browser become distinguishable because they carry context.
+      </p>
+      
+      <h2>Re-finding Pages</h2>
+      
+      <p>
+        People do not remember URLs. They remember context.
+        They remember the Airbnb listing with the pool. The paper about
+        <em>P. gingivalis</em>. The startup that Bob liked. The article that contained
+        an important chart.
+      </p>
+      
+      <p>
+        Annotations create retrieval hooks. When you leave ratings, keywords, notes,
+        reactions, or measurements on a page, you make it easier to find later. The
+        page is no longer identified only by its URL. It can also be identified by
+        what you left on it.
+      </p>
+      
+      <p>
+        Annotations also preserve who left them and when. A note written by Alice six
+        months ago often means something different from a note written yesterday.
+        Over time, pages accumulate history as well as information.
+      </p>
+      
+      <h2>Discussion</h2>
+      
+      <p>
+        Most conversations about webpages happen somewhere else. A link is shared in
+        WhatsApp, Discord, Slack, email, or a group chat. The discussion survives and
+        the page survives, but the relationship between them gradually disappears.
+      </p>
+      
+      <p>
+        Byblos keeps discussions attached to the pages they describe. When somebody
+        returns to a page, the discussion is still there. When somebody shares a page,
+        the discussion comes with it. New participants can understand not only the
+        page itself, but also what other people thought about it.
+      </p>
+      
+      <p>
+        Discussions become part of the page's context rather than a separate stream of
+        messages that must be reconstructed later.
+      </p>
+      
       <h2>The Big Idea</h2>
-      <p>Annotations stop being isolated notes and start becoming part of your browsing environment. They help you remember why a page mattered, help you find it again later, and make it easier to share your thinking with other people.</p>
-      <p>A note by itself is useful.
-      A note that changes how you navigate, organize, discover, and discuss pages is much more powerful.</p>
+      
+      <p>
+        Annotations are not just notes. They become part of how pages are organized,
+        discovered, and discussed. The value of an annotation is not only the
+        information it contains. It is the role that information plays throughout the
+        rest of the workspace.
+      </p>
     </article>
+    <section class="menu-section subpage-menu" aria-label="Menu">
+      <div class="menu-grid">
+        <section class="menu-group">
+          <h3>Features</h3>
+          <a href="annotations.html">Annotations</a>
+          <a href="sort-filter.html">Sort &amp; Filter</a>
+          <a href="the-tree.html">The Tree</a>
+          <a href="chat-and-tracker-inbox.html">Chat &amp; Tracker Inbox</a>
+          <a href="sharing-workspaces.html">Sharing Workspaces</a>
+        </section>
+
+        <section class="menu-group">
+          <h3>Why Byblos</h3>
+          <a href="value-thesis.html">Value Thesis</a>
+          <a href="compared-to-existing-tools.html">Compared to Existing Tools</a>
+          <a href="common-use-cases.html">Common Use Cases</a>
+        </section>
+
+        <section class="menu-group">
+          <h3>Trust</h3>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="faq.html">FAQ</a>
+          <a href="about-monklab.html">About Monklab</a>
+        </section>
+      </div>
+    </section>
   </main>
 </body>
 </html>

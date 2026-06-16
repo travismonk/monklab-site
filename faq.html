@@ -9,7 +9,37 @@
 <body>
   <header class="site-header">
     <a class="brand" href="./">Byblos turns webpages into collaborative workspaces</a>
-    <nav aria-label="Main navigation"><a href="./">Home</a><a href="privacy.html">Privacy</a></nav>
+    <nav aria-label="Main navigation">
+      <details class="header-menu">
+        <summary aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </summary>
+        <div class="header-menu-panel">
+          <section>
+            <h2>Features</h2>
+            <a href="annotations.html">Annotations</a>
+            <a href="sort-filter.html">Sort &amp; Filter</a>
+            <a href="the-tree.html">The Tree</a>
+            <a href="chat-and-tracker-inbox.html">Chat &amp; Tracker Inbox</a>
+            <a href="sharing-workspaces.html">Sharing Workspaces</a>
+          </section>
+          <section>
+            <h2>Why Byblos</h2>
+            <a href="value-thesis.html">Value Thesis</a>
+            <a href="compared-to-existing-tools.html">Compared to Existing Tools</a>
+            <a href="common-use-cases.html">Common Use Cases</a>
+          </section>
+          <section>
+            <h2>Trust</h2>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="faq.html">FAQ</a>
+            <a href="about-monklab.html">About Monklab</a>
+          </section>
+        </div>
+      </details>
+    </nav>
   </header>
   <main class="page-main">
     <a class="back-link" href="./">Back to hub</a>
@@ -18,56 +48,175 @@
       <h1>FAQ</h1>
 
       <h2>What is a Byblos tab?</h2>
-      <p>A Byblos tab saves viewed pages into your workspace. Those pages appear as nodes in the tree, support annotations, can be shared with collaborators, and preserve browsing context over time.</p>
+      <p>
+        A Byblos tab saves viewed pages into your workspace. Those pages appear
+        as nodes in the tree, support annotations, can be shared with
+        collaborators, and preserve browsing context over time.
+      </p>
 
       <h2>What is a Chrome tab?</h2>
-      <p>A Chrome tab is ordinary browsing. Pages viewed in Chrome tabs are not saved into the tree unless they are promoted.</p>
+      <p>
+        A Chrome tab is ordinary browsing. Pages viewed in Chrome tabs are not
+        saved into the tree unless they are promoted.
+      </p>
 
       <h2>Why are there two kinds of tabs?</h2>
-      <p>Not every page is worth keeping. Chrome tabs are for exploration and disposable browsing. Byblos tabs are for pages you want to save, organize, discuss, or revisit later.</p>
+      <p>
+        Not every page is worth keeping. Chrome tabs are for exploration and
+        disposable browsing. Byblos tabs are for pages you want to save,
+        organize, discuss, or revisit later.
+      </p>
 
       <h2>Can I switch between them?</h2>
-      <p>Yes. Promote converts a Chrome tab into a Byblos tab. Demote converts a Byblos tab back into a Chrome tab.</p>
+      <p>
+        Yes. Promote converts a Chrome tab into a Byblos tab. Demote converts a
+        Byblos tab back into a Chrome tab.
+      </p>
 
       <h2>Do I need an account?</h2>
-      <p>No. Byblos does not require accounts, email addresses, passwords, social media accounts, or payment information.</p>
+      <p>
+        No. Byblos does not require accounts, email addresses, passwords, social
+        media accounts, or payment information.
+      </p>
 
       <h2>What happens when I share a workspace?</h2>
-      <p>Sharing a workspace gives another person access to the pages, annotations, discussions, and organization contained within that workspace. You can share an entire workspace or only a subset of pages. To share a subset, use the Selection Rail to sort and filter pages however you like, then click <strong>Share Filtered Pages</strong>. For example, you might share only pages that you hearted, only pages with a particular keyword, only pages your spouse commented on, or any other collection of pages that can be produced by a query.</p>
+      <p>
+        Sharing a workspace gives another person access to the pages,
+        annotations, discussions, and organization contained within that
+        workspace. You can share an entire workspace or only a subset of pages.
+        To share a subset, use the Selection Rail to sort and filter pages
+        however you like, then click <strong>Share Filtered Pages</strong>. For
+        example, you might share only pages that you hearted, only pages with a
+        particular keyword, only pages your spouse commented on, or any other
+        collection of pages that can be produced by a query.
+      </p>
 
       <h2>Can I use Byblos by myself?</h2>
-      <p>Yes. Many people use Byblos as a personal browsing and organization tool. Sharing is optional.</p>
+      <p>
+        Yes. Many people use Byblos as a personal browsing and organization
+        tool. Sharing is optional.
+      </p>
 
       <h2>What information is synchronized?</h2>
-      <p>All workspace data is synchronized with a Cloudflare backend for backup. Nothing from Chrome tabs is synced. Everything from Byblos tabs is synced except thumbnails, which remain local, and chat messages, which are end-to-end encrypted.</p>
+      <p>
+        All workspace data is synchronized with a Cloudflare backend for backup.
+        Nothing from Chrome tabs is synced. Everything from Byblos tabs is
+        synced except thumbnails, which remain local, and chat messages, which
+        are end-to-end encrypted.
+      </p>
 
       <h2>How do agents work in Byblos?</h2>
-      <p>Byblos can prepare context from selected pages and discussions for use with ChatGPT, Claude, Gemini, and other LLMs. When you launch an agent workflow, Byblos builds a context packet containing information about the selected pages and their recent discussions, copies it to your clipboard, and opens the provider you selected. After the model responds, you can paste the response back into Byblos, where it is attached to the pages it refers to.</p>
+      <p>
+        Byblos can prepare context from selected pages and discussions for use
+        with ChatGPT, Claude, Gemini, and other LLMs. When you launch an agent
+        workflow, Byblos builds a context packet containing information about
+        the selected pages and their recent discussions, copies it to your
+        clipboard, and opens the provider you selected. After the model
+        responds, you can paste the response back into Byblos, where it is
+        attached to the pages it refers to.
+      </p>
 
       <h2>What information does an agent receive?</h2>
-      <p>Agents receive information about the pages you explicitly selected, including page titles, URLs, and a limited amount of recent discussion history. They do not receive workspace access tokens, encryption keys, runtime state, or broader workspace internals. Because recent discussions are included in the context packet, any selected chat messages sent to an external LLM provider are visible to that provider.</p>
+      <p>
+        Agents receive information about the pages you explicitly selected,
+        including page titles, URLs, and a limited amount of recent discussion
+        history. They do not receive workspace access tokens, encryption keys,
+        runtime state, or broader workspace internals. Because recent
+        discussions are included in the context packet, any selected chat
+        messages sent to an external LLM provider are visible to that provider.
+      </p>
 
       <h2>Why are agents useful in Byblos?</h2>
-      <p>Most AI tools operate on individual pages, documents, or chat conversations. Byblos provides additional context by allowing agents to see discussions attached to multiple pages at once and return replies directly to those pages. This makes it easier to compare options, summarize discussions, identify unresolved questions, explain past decisions, and participate in ongoing page-level conversations without losing the surrounding context.</p>
+      <p>
+        Most AI tools operate on individual pages, documents, or chat
+        conversations. Byblos provides additional context by allowing agents to
+        see discussions attached to multiple pages at once and return replies
+        directly to those pages. This makes it easier to compare options,
+        summarize discussions, identify unresolved questions, explain past
+        decisions, and participate in ongoing page-level conversations without
+        losing the surrounding context.
+      </p>
 
       <h2>Can other people see my browsing history?</h2>
-      <p>Not automatically. Only pages opened in a Byblos tab and stored in shared workspaces are visible to collaborators who have its key. Ordinary Chrome browsing remains ordinary Chrome browsing.  Workspaces that you have not shared are only backed up to Cloudflare and not shared with anyone else.</p>
+      <p>
+        Not automatically. Only pages opened in a Byblos tab and stored in
+        shared workspaces are visible to collaborators who have its key.
+        Ordinary Chrome browsing remains ordinary Chrome browsing.  Workspaces
+        that you have not shared are only backed up to Cloudflare and not shared
+        with anyone else.
+      </p>
 
       <h2>Why not just use bookmarks?</h2>
-      <p>Bookmarks save pages. Byblos also preserves context, discussions, annotations, navigation history, and decision-making information surrounding those pages.</p>
+      <p>
+        Bookmarks save pages. Byblos also preserves context, discussions,
+        annotations, navigation history, and decision-making information
+        surrounding those pages.
+      </p>
 
       <h2>Why not just use Discord, Slack, or WhatsApp?</h2>
-      <p>Those tools are designed for conversations. Byblos is designed around webpages. Discussions, annotations, ratings, measurements, and navigation all stay attached to the pages they refer to.</p>
+      <p>
+        Those tools are designed for conversations. Byblos is designed around
+        webpages. Discussions, annotations, ratings, measurements, and
+        navigation all stay attached to the pages they refer to.
+      </p>
 
       <h2>Do I need to rebuild my bookmarks or history in Byblos?</h2>
-      <p>No. Byblos is a Chrome extension, and your bookmarks and history live in Chrome. Byblos can work with pages opened from your Chrome bookmarks or history, just like any other webpage. Open a bookmark in a Byblos tab and the page is saved into your workspace and appears in the tree.</p>
+      <p>
+        No. Byblos is a Chrome extension, and your bookmarks and history live in
+        Chrome. Byblos can work with pages opened from your Chrome bookmarks or
+        history, just like any other webpage. Open a bookmark in a Byblos tab
+        and the page is saved into your workspace and appears in the tree.
+      </p>
 
       <h2>What happens if I close a Byblos tab?</h2>
-      <p>The page remains in the workspace. You can reopen it later by clicking its node in the tree.</p>
+      <p>
+        The page remains in the workspace. You can reopen it later by clicking
+        its node in the tree.
+      </p>
+
+      <h2>What happens if a website URL changes or disappears?</h2>
+
+      <p>That node is displayed as an invalid 404, 403, 301, 302, etc.
+        if you try to load it.  But your annotations remain attached to that node.</p>
 
       <h2>Can I lose my work?</h2>
-      <p>Byblos is designed to preserve workspace pages, annotations, discussions, and context after tabs are closed. You can reload workspaces months or years later and return to the same pages, tree structure, and annotations that were previously saved. Your workspaces are backed up by a small keyring stored in Chrome sync storage. Even if your machine dies, you can recover your workspaces. On another machine, log into Chrome with your Google account, install Byblos, and click "Recover Library." Your workspaces will be restored on the new device.</p>
+      <p>
+        Byblos is designed to preserve workspace pages, annotations,
+        discussions, and context after tabs are closed. You can reload
+        workspaces months or years later and return to the same pages, tree
+        structure, and annotations that were previously saved. Your workspaces
+        are backed up by a small keyring stored in Chrome sync storage. Even if
+        your machine dies, you can recover your workspaces. On another machine,
+        log into Chrome with your Google account, install Byblos, and click
+        "Recover Library." Your workspaces will be restored on the new device.
+      </p>
     </article>
+    <section class="menu-section subpage-menu" aria-label="Menu">
+      <div class="menu-grid">
+        <section class="menu-group">
+          <h3>Features</h3>
+          <a href="annotations.html">Annotations</a>
+          <a href="sort-filter.html">Sort &amp; Filter</a>
+          <a href="the-tree.html">The Tree</a>
+          <a href="chat-and-tracker-inbox.html">Chat &amp; Tracker Inbox</a>
+          <a href="sharing-workspaces.html">Sharing Workspaces</a>
+        </section>
+
+        <section class="menu-group">
+          <h3>Why Byblos</h3>
+          <a href="value-thesis.html">Value Thesis</a>
+          <a href="compared-to-existing-tools.html">Compared to Existing Tools</a>
+          <a href="common-use-cases.html">Common Use Cases</a>
+        </section>
+
+        <section class="menu-group">
+          <h3>Trust</h3>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="faq.html">FAQ</a>
+          <a href="about-monklab.html">About Monklab</a>
+        </section>
+      </div>
+    </section>
   </main>
 </body>
 </html>

@@ -9,54 +9,212 @@
 <body>
   <header class="site-header">
     <a class="brand" href="./">Byblos turns webpages into collaborative workspaces</a>
-    <nav aria-label="Main navigation"><a href="./">Home</a><a href="privacy.html">Privacy</a></nav>
+    <nav aria-label="Main navigation">
+      <details class="header-menu">
+        <summary aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </summary>
+        <div class="header-menu-panel">
+          <section>
+            <h2>Features</h2>
+            <a href="annotations.html">Annotations</a>
+            <a href="sort-filter.html">Sort &amp; Filter</a>
+            <a href="the-tree.html">The Tree</a>
+            <a href="chat-and-tracker-inbox.html">Chat &amp; Tracker Inbox</a>
+            <a href="sharing-workspaces.html">Sharing Workspaces</a>
+          </section>
+          <section>
+            <h2>Why Byblos</h2>
+            <a href="value-thesis.html">Value Thesis</a>
+            <a href="compared-to-existing-tools.html">Compared to Existing Tools</a>
+            <a href="common-use-cases.html">Common Use Cases</a>
+          </section>
+          <section>
+            <h2>Trust</h2>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="faq.html">FAQ</a>
+            <a href="about-monklab.html">About Monklab</a>
+          </section>
+        </div>
+      </details>
+    </nav>
   </header>
   <main class="page-main">
     <a class="back-link" href="./">Back to hub</a>
     <article class="content-card">
       <p class="eyebrow">Why Byblos</p>
       <h1>Compared To Existing Tools</h1>
-      <p>Most people already have a system for dealing with webpages.</p>
-      <p>The system is usually not a single tool. Pages get saved in bookmarks. Notes live in a notes application. Discussions happen in a chat application. Measurements end up in a spreadsheet. Tasks go into a task manager. Browser history preserves where you went. Eventually, all of those tools become part of the same workflow.</p>
-      <p>The tools themselves are often excellent. The problem is that they were built for notes, messaging, spreadsheets, documents, bookmarks, or browser history. They were not built around webpages. As a result, people end up adapting those tools to solve problems they were never designed to solve.</p>
+      <h2>Existing Tools Solve Pieces Of The Problem</h2>
+      <p>
+        People already have ways to work around the browser's limitations. Links
+        are shared in WhatsApp groups. Discussions happen in Discord. Notes are
+        written in Notion or Obsidian. Interesting pages are saved to bookmarks.
+        Comparisons end up in spreadsheets. Tasks and reminders live somewhere
+        else.
+      </p>
 
-      <h2>Chat Applications</h2>
-      <p>WhatsApp, Discord, Slack, Teams, Signal, Telegram, and similar applications are designed for conversations. Webpages usually appear inside those systems as links that people discuss.</p>
-      <p>This works well when the discussion is small. The problems begin when the number of pages grows. Suppose five Airbnb listings are discussed over the course of a week in a WhatsApp group. A month later, try reading the conversation again. Can you easily determine which messages refer to which listing? Can you tell which listing people preferred? Can you tell why one option was rejected and another was chosen? Usually the pages survive and the conversation survives. The relationship between them becomes difficult to reconstruct.</p>
-      <p>The problem is not that WhatsApp is bad. WhatsApp was built for messaging. It was never intended to become a workspace for discussing webpages.</p>
-      <p>Discord, Slack, and other channel-based systems solve part of this problem by introducing channels, threads, pinned messages, and other organizational tools. A determined group could go much further and create a channel for every page they care about. At that point, the discussion is effectively attached to the page.</p>
-      <p>The interesting question is what happens next.</p>
-      <p>Suppose a page has accumulated fourteen comments, three reactions, two ratings, and a follow-up reminder. Should that page appear in an inbox because somebody needs to respond? Should it be easier to find because several people rated it highly? Should it be possible to sort pages by discussion activity, filter pages by authorship, or query pages based on the information attached to them?</p>
-      <p>Discord and Slack were not built to treat webpages as structured, queryable objects. The page exists, the discussion exists, and the relationship between them is maintained through conventions, messages, pinned links, bots, databases, and human discipline. None of this is impossible to build. In fact, many teams do exactly that. But once channels correspond to webpages, bots maintain metadata, and databases track state, the system has effectively become a page-centric workspace.</p>
-      <p>At that point, a surprising amount of effort has been spent creating a core functionality of Byblos. But the webpage still lives somewhere else. The discussion system knows about the discussion. The browser knows about the page. The metadata lives in a database. The reminders live somewhere else. The relationship between all of those things must be maintained explicitly.</p>
-      <p>Byblos starts from a different assumption. The webpage is the primary object. Discussions, ratings, reactions, measurements, reminders, and navigation all accumulate around the page itself. Instead of building systems that point at webpages, Byblos builds on top of webpages.</p>
+      <p>
+        None of these tools are bad. In fact, most of them are excellent at the
+        jobs they were designed to perform.
+      </p>
 
-      <h2>Notes Applications</h2>
-      <p>Obsidian, Notion, Apple Notes, Google Docs, and similar tools are designed for writing and organizing information. Many people use them to save links alongside their thoughts.</p>
-      <p>This works well until the notes and the browsing process become separated from one another. The note survives. The page survives. The path that led to the page often disappears.</p>
-      <p>A note might tell you what you thought. It usually cannot tell you how you arrived there, what alternatives you considered, what your collaborators thought, or where the page sits within a larger investigation.</p>
-      <p>The problem is not that note-taking applications are bad. They were built for notes, not browsing.</p>
-      <p>Byblos keeps notes attached to pages and preserves the navigation that led to them.</p>
+      <p>
+        The reason people adopt them is that the browser provides very little
+        support for evaluating information over time. Once a task involves
+        comparing many webpages, discussing alternatives, recording
+        observations, and gradually arriving at a decision, people naturally
+        begin introducing additional tools to compensate.
+        The result is a workflow that spans multiple applications, each
+        responsible for a different part of the same decision.
+      </p>
 
-      <h2>Bookmark Managers</h2>
-      <p>Bookmarks, Raindrop, Pocket, and similar tools are designed to save pages. They solve that problem extremely well.</p>
-      <p>The challenge begins when the page itself is no longer enough. You may want to compare pages, discuss them, rate them, measure them, organize them, or make decisions about them.</p>
-      <p>A bookmark tells you that the page mattered. It rarely tells you why.</p>
-      <p>The problem is not that bookmark managers are bad. They were built to save pages, not preserve context.</p>
-      <p>Byblos preserves the page, the context surrounding the page, and the decisions that emerged from it.</p>
+      <h2>The Airbnb Example</h2>
+      <p>
+        Imagine a family planning a vacation. Over the course of a week they
+        collect twenty Airbnb listings. Some are too expensive. Some are in the
+        wrong neighborhood. Some have incredible views. One looks perfect until
+        somebody notices a major road running directly behind the property.
+        Another initially seems expensive but later becomes attractive after
+        comparing it to similar properties nearby.
+      </p>
 
-      <h2>Annotation Tools</h2>
-      <p>Tools such as Hypothesis, Diigo, and Memex are designed to let users annotate webpages.</p>
-      <p>Byblos shares some of those capabilities, but annotations do not exist in isolation. Ratings affect sorting. Keywords affect filtering. Discussions remain attached to pages. The tree displays annotation state directly. Annotations become part of navigation, organization, and collaboration.</p>
-      <p>The problem is not that annotation tools are bad. They were built for annotation.</p>
-      <p>Byblos treats annotation as part of a larger browsing environment.</p>
+      <p>
+        The links are shared in a WhatsApp group. Opinions are exchanged
+        throughout the week. Somebody bookmarks a few favorites. Somebody else
+        creates a spreadsheet to compare prices and amenities. A handful of
+        properties emerge as serious candidates.
+        A week later the family returns to continue the search.</p>
 
-      <h2>The Pattern</h2>
-      <p>The same pattern appears repeatedly.</p>
-      <p>Chat applications were built for conversations. Notes applications were built for notes. Bookmark managers were built for saving pages. Annotation tools were built for annotation. Spreadsheets were built for structured data.</p>
-      <p>People combine all of these tools because the webpage sits at the center of a much larger process. The page needs discussion, notes, ratings, measurements, organization, navigation, and collaboration. Those capabilities exist today. They simply live in different systems.</p>
-      <p>Byblos is not trying to replace all of these tools individually. It is trying to make webpages the primary object around which those capabilities are organized.</p>
+      <p>
+        The Airbnb listings are still there. The WhatsApp messages are still
+        there. The spreadsheet is still there. What is difficult to recover is
+        the relationship between them.
+        Which property was the one with the amazing view? Which property did
+        your spouse strongly prefer? Which one looked promising until somebody
+        discovered the road noise? Which properties were rejected? Why were they
+        rejected? Which ones are still under consideration?
+        The information has not been lost. It has been distributed across
+        multiple systems.
+      </p>
+
+      <p>
+        A more organized group can reduce some of this pain in exchange for more. 
+        They might use
+        Discord instead of WhatsApp. They might create a channel for each
+        property. Reactions can serve as ratings. Pinned messages can summarize
+        conclusions. Bots can track reminders and metadata.
+      </p>
+
+      <p>This approach solves some problems and creates others.
+        The Airbnb listing still exists inside the browser. The discussion
+        exists inside Discord. Ratings exist as reactions. Reminders exist
+        wherever the bot stores them. Search operates differently in each
+        system. The relationship between those systems must be maintained
+        explicitly.
+        Nobody wants to stitch together a browser, a spreadsheet, notes, reminders,
+        and Discord channels just to make a damn decision.
+      </p>
+
+      <h2>Page-Centric Tools</h2>
+      <p>
+        The limitations of browser-centric workflows have not gone unnoticed. Over the years,
+        many tools have emerged to solve specific pain points of the workflow.
+      </p>
+
+      <p>
+        Pocket helps users save pages for later. Hypothesis and Diigo allow
+        users to annotate webpages. Zotero helps researchers collect and
+        organize sources. Bookmark managers such as Raindrop provide richer
+        organization than traditional browser bookmarks. Other tools focus on
+        tab management, note-taking, search, collaboration, or research
+        workflows.
+        These tools are often excellent at the problems they were designed to
+        solve.
+      </p>
+
+      <p>
+        Their existence demonstrates that people repeatedly
+        find themselves needing more than a webpage. They need notes attached to
+        pages. They need discussions attached to pages. They need ratings,
+        reminders, relationships, organization, search, and collaboration
+        attached to pages.
+      </p>
+
+      <p>
+        Most page-centric tools address one of these needs at a time.
+        Annotation tools focus on annotation. Bookmark managers focus on
+        organization. Research tools focus on source collection. Collaboration
+        tools focus on discussion.
+      </p>
+
+      <p>The challenge is that these capabilities become most valuable when they 
+      interact with one another. A bookmark becomes more useful when it carries 
+      discussion, ratings, and reactions so you know why the page was saved. 
+      A rating becomes more useful when it influences which page you discuss next. 
+      Navigation becomes more informative when it reveals patterns in what people are thinking.
+      The value of bookmarks, annotations, discussions, and navigation graphs are
+      amplified by the presence of each other.</p>
+
+
+<h2>Byblos</h2>
+
+<p>
+  Byblos brings these capabilities into the same workspace and treats them as
+  parts of the same process rather than independent tools. 
+  As a result, Byblos can answer questions and make observations that many tools miss in isolation.
+  Consider our Airbnb example from earlier:
+</p>
+
+<ul>
+  <li>Which listings with keyword "pool" did Alice and Bob both like, sorted by cost?</li>
+  <li>This listing passes my filters, why did we reject it? Oh, Alice left a chat.</li>
+  <li>Why are the three of us looking for listings in different parts of the city?</li>
+  <li>Alice is writing distances on pages, so she prefers listings in close proximity to events.</li>
+  <li>I just joined the search, what is everybody thinking?</li>
+  <li>How have people's preferences changed over time?</li>
+</ul>
+
+<p>
+  None of these questions belong to a single category such as bookmarking,
+  annotation, discussion, navigation, or collaboration. They emerge from the
+  interaction between all of them. Byblos exists because much of the value of
+  page-centric work lives in those interactions.
+</p>
+
+<p>Since the entire search and all relevant context is in the same place, sharing it with others is trivial.
+  For example, Carol can join the Airbnb search with a single document instead of 
+  a folder of contextless tabs, a bookmark manager, a Notion document, a spreadsheet, 
+  and a WhatsApp thread.
+</p>
     </article>
+    <section class="menu-section subpage-menu" aria-label="Menu">
+      <div class="menu-grid">
+        <section class="menu-group">
+          <h3>Features</h3>
+          <a href="annotations.html">Annotations</a>
+          <a href="sort-filter.html">Sort &amp; Filter</a>
+          <a href="the-tree.html">The Tree</a>
+          <a href="chat-and-tracker-inbox.html">Chat &amp; Tracker Inbox</a>
+          <a href="sharing-workspaces.html">Sharing Workspaces</a>
+        </section>
+
+        <section class="menu-group">
+          <h3>Why Byblos</h3>
+          <a href="value-thesis.html">Value Thesis</a>
+          <a href="compared-to-existing-tools.html">Compared to Existing Tools</a>
+          <a href="common-use-cases.html">Common Use Cases</a>
+        </section>
+
+        <section class="menu-group">
+          <h3>Trust</h3>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="faq.html">FAQ</a>
+          <a href="about-monklab.html">About Monklab</a>
+        </section>
+      </div>
+    </section>
   </main>
 </body>
 </html>

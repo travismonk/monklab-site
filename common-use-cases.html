@@ -9,7 +9,37 @@
 <body>
   <header class="site-header">
     <a class="brand" href="./">Byblos turns webpages into collaborative workspaces</a>
-    <nav aria-label="Main navigation"><a href="./">Home</a><a href="privacy.html">Privacy</a></nav>
+    <nav aria-label="Main navigation">
+      <details class="header-menu">
+        <summary aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </summary>
+        <div class="header-menu-panel">
+          <section>
+            <h2>Features</h2>
+            <a href="annotations.html">Annotations</a>
+            <a href="sort-filter.html">Sort &amp; Filter</a>
+            <a href="the-tree.html">The Tree</a>
+            <a href="chat-and-tracker-inbox.html">Chat &amp; Tracker Inbox</a>
+            <a href="sharing-workspaces.html">Sharing Workspaces</a>
+          </section>
+          <section>
+            <h2>Why Byblos</h2>
+            <a href="value-thesis.html">Value Thesis</a>
+            <a href="compared-to-existing-tools.html">Compared to Existing Tools</a>
+            <a href="common-use-cases.html">Common Use Cases</a>
+          </section>
+          <section>
+            <h2>Trust</h2>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="faq.html">FAQ</a>
+            <a href="about-monklab.html">About Monklab</a>
+          </section>
+        </div>
+      </details>
+    </nav>
   </header>
   <main class="page-main">
     <a class="back-link" href="./">Back to hub</a>
@@ -17,51 +47,203 @@
       <p class="eyebrow">Why Byblos</p>
       <h1>Common Use Cases</h1>
 
-      <h2>Planning a Vacation</h2>
-      <h3>Current Workflow</h3>
-      <p>Most people start by opening a collection of Airbnb listings. Interesting listings get sent into WhatsApp, Signal, Discord, or a family group chat. Notes about the listings live in the conversation. Ratings and comparisons are often kept in memory, a spreadsheet, or a separate notes application.</p>
-      <p>A week later, the listings still exist and the discussion still exists, but the relationship between them becomes harder to reconstruct. Which listing did everyone like? Which one was rejected? Which one was the cheapest? Which one had the pool?</p>
-      <h3>Byblos</h3>
-      <p>The listings, ratings, discussions, measurements, and decisions all live in the same workspace. Listings can be rated, discussed, tagged, measured, sorted, and filtered directly. The discussion stays attached to the listing itself.</p>
-      <p>Instead of sharing links and discussing them elsewhere, the listing becomes the place where the discussion happens.</p>
+      <h2>Researching a Topic</h2>
+      
+      <p>
+        Alice is performing a literature review on whether poor oral hygiene
+        influences the risk of Alzheimer's disease. She creates a workspace and begins
+        collecting papers on neuroinflammation, oral health, dementia, and the
+        blood-brain barrier. As she reads, she leaves reactions on papers she finds
+        important and records observations in page discussions.
+      </p>
+      
+      <p>
+        As the workspace grows, finding important papers becomes easier rather than
+        harder. When Alice wants to revisit a source, she filters pages that she rated
+        highly or marked with a heart. Her notes remain attached to the papers that
+        inspired them, making it easy to recover not only the source material but also
+        what she was thinking when she read it.
+      </p>
+      
+      <p>
+        One well-cited paper on <em>P. gingivalis</em> has a significant impact on her
+        thinking. She creates a new tree and begins exploring both the paper's
+        references and the papers that cite it. That investigation eventually branches
+        into another tree focused on the oral microbiome, where she begins searching
+        for other microbial candidates that may influence neurodegeneration.
+      </p>
+      
+      <p>
+        A few weeks later, her advisor Bob becomes interested in the project. Alice
+        shares the workspace with him. Instead of sending dozens of PDFs, bookmarks,
+        notes, and links, she shares one workspace containing the papers, trees,
+        annotations, discussions, and reasoning that led her to the current hypothesis.
+        Bob leaves comments on several papers and suggests additional directions for
+        investigation.
+      </p>
+      
+      <p>
+        By plotting annotated pages over time, Alice can see how her interests evolved
+        throughout the project. Early work focused on neuroinflammation. Later work
+        concentrated on oral microbiology and host immune response. After a month, Alice 
+        realizes that oral microbiome research has become the center of the investigation. 
+        What began as a question about Alzheimer’s disease has evolved into a potential 
+        review article focused on microbial drivers of neurodegeneration. More 
+        importantly, it preserves the reasoning that connected them.
+      </p>
 
-      <h2>Comparing Products</h2>
-      <h3>Current Workflow</h3>
-      <p>Product comparisons often start as browser tabs and eventually turn into spreadsheets. One tab contains the product. Another contains reviews. Notes are written somewhere else. Costs, features, and comparisons get copied into a document or spreadsheet.</p>
-      <p>The spreadsheet gradually becomes the real source of truth while the browser becomes a collection of sources.</p>
-      <h3>Byblos</h3>
-      <p>The pages themselves become the records. Ratings, notes, prices, reactions, and measurements remain attached to the products they describe. Sort and filter can organize the pages directly without requiring a separate spreadsheet to become the center of the process.</p>
-      <p>The comparison stays connected to the products being compared.</p>
+      <h2>Streaming and Community Exploration</h2>
 
-      <h2>Research</h2>
-      <h3>Current Workflow</h3>
-      <p>Research usually accumulates across many systems. Browser tabs contain sources. Notes live in Obsidian, Notion, or a document. Discussions happen elsewhere. Bookmarks preserve links. Eventually the information survives, but the investigation itself becomes harder to reconstruct.</p>
-      <p>Weeks or months later, finding the source material is often easier than remembering the reasoning process.</p>
-      <h3>Byblos</h3>
-      <p>The tree preserves the investigation. Notes remain attached to sources. Discussions remain attached to pages. The path that led to a conclusion is preserved alongside the conclusion itself.</p>
-      <p>Instead of preserving only the material, Byblos preserves the process of understanding the material.</p>
+      <p>
+        Alice is a Twitch streamer. Most evenings
+        she explores the web with her viewers. Some nights she looks at indie games.
+        Other nights she reviews AI tools, startup ideas, scientific papers, politics, 
+        or whatever else catches the community's interest.
+      </p>
+      
+      <p>
+        Normally these streams generate thousands of chat messages. Interesting ideas
+        appear, people share links, debates break out, and recommendations are made.
+        By the next minute, most of that context is effectively gone. New viewers have
+        no idea what was discussed last week, and even regular viewers struggle to
+        remember which pages generated the most interest week to week.
+      </p>
+      
+      <p>
+        Instead of sharing only her screen, Alice shares a Byblos workspace with her
+        entire audience. Every
+        page she visits becomes part of a growing community workspace. Viewers can
+        react to pages, leave notes, create discussions, and contribute related pages
+        of their own to communal trees. Conversations happen around the pages themselves rather than
+        being squeezed through a single stream of chat messages.
+      </p>
+      
+      <p>
+        Over time, the workspace becomes a collective persistent memory of the community. A
+        discussion about an indie game remains attached to the game's Steam page. A
+        debate about a startup remains attached to the company's website. A useful
+        explanation on a scientific paper can still be found months later. New
+        viewers can explore previous streams, understand why certain pages became
+        important, and participate in conversations long after the original stream
+        ended.  Streamers can make more informed decisions about what type of content
+        their audience responds to.
+      </p>
+      
+      <p>
+        The result is not just a stream. It is a persistent community built around a
+        shared collection of webpages. The community is no longer limited to reacting
+        to what the streamer finds. It can collectively discover, discuss, organize,
+        and build on that information over time.  Six months later, new viewers are 
+        still discovering, discussing, and expanding trees created during the community’s 
+        earliest streams.
+      </p>
 
-      <h2>Collaborative Investigation</h2>
-      <h3>Current Workflow</h3>
-      <p>A team investigating a problem often ends up using a browser, chat application, documents, spreadsheets, and task managers simultaneously. The evidence lives in webpages. The discussion lives in chat. Conclusions live in documents. Follow-ups live somewhere else.</p>
-      <p>Every tool is useful, but none of them understand the complete picture.</p>
-      <h3>Byblos</h3>
-      <p>The evidence becomes the primary object. Pages can accumulate discussion, notes, reactions, measurements, reminders, and decisions directly. The workspace can then reason about those relationships because they are part of the same system.</p>
-      <p>Instead of reconstructing an investigation from several tools, the investigation remains attached to the evidence that generated it.</p>
+      <h2>Living Publications</h2>
+      
+      <p>
+        Alice and Bob are investigative journalists researching allegations that a
+        city council member steered public contracts toward companies owned by close
+        associates. They create a workspace and begin collecting evidence. News
+        articles grow into procurement records. Procurement records grow into company
+        registrations. Company registrations grow into campaign finance disclosures.
+        Interviews, archived webpages, public statements, and court filings gradually
+        expand into a large investigation tree.
+      </p>
+      
+      <p>
+        As the investigation develops, Alice and Bob leave annotations, discussions,
+        reactions, and notes directly on the evidence. Some pages strengthen the
+        allegation. Others weaken it. Several claims remain unresolved. Contradictory
+        evidence is preserved alongside supporting evidence rather than disappearing
+        during editing.
+      </p>
+      
+      <p>
+        In a traditional newsroom, the final product would be a linear article. The
+        investigation would be compressed into a narrative, most of the supporting
+        work would remain invisible, and readers would have little ability to inspect
+        the reasoning process behind the story.
+      </p>
+      
+      <p>
+        In Byblos, the workspace itself becomes the publication. Readers can follow
+        the investigation at their own pace. They can inspect the evidence supporting
+        a claim, examine counterarguments, review annotations left by reporters, and
+        trace conclusions back to their original sources. Different readers can
+        explore different paths through the same body of evidence.
+      </p>
+      
+      <p>
+        Publication is no longer the end of the investigation. Readers can leave
+        comments on specific pieces of evidence. Experts can challenge claims directly
+        on the pages that support them. New information can be attached to existing
+        nodes. Corrections, updates, and follow-up reporting become part of the same
+        workspace rather than separate articles published months later.
+      </p>
+      
+      <p>
+        The result is not an interactive article. It is a living publication: a
+        shared workspace where evidence, discussion, interpretation, and publication
+        remain connected long after the story is released. Two years later, new evidence 
+        is attached to the original investigation rather than spawning an entirely 
+        separate story.
+      </p>
 
-      <h2>Recurring Work</h2>
-      <h3>Current Workflow</h3>
-      <p>Many people revisit the same collection of pages every day. Market data, sales leads, job listings, inventory systems, competitors, research sources, or project dashboards are checked repeatedly. Browser bookmarks help reopen the pages, but the context surrounding those visits often lives elsewhere.</p>
-      <p>People end up maintaining a collection of bookmarks, reminders, notes, and spreadsheets just to remember what changed.</p>
-      <h3>Byblos</h3>
-      <p>The pages remain in a workspace that accumulates context over time. Notes, discussions, measurements, and trackers stay attached to the pages they describe. The Inbox can surface pages that require attention, while the tree preserves the history of previous work.</p>
-      <p>The result is not simply a list of pages to revisit. It becomes a record of how those pages changed and what happened when they were last reviewed.</p>
+ <h2>Planning a Vacation</h2>
+      <p>A family is planning a vacation to either Lisbon, Athens, Paris, or Barcelona. 
+        Alice creates a workspace and shares it with husband Bob and kids Carol and Dave.  
+        Bob creates a tree for flights. He records the ticket prices
+        of different flights and their durations to candidate cities. 
+        Alice creates a tree and looks at Airbnb listings in each
+        city. She samples ten three-bedroom listings in each city and estimates the average
+        accommodation cost for a week.  Carol and Dave search for activities in their own trees. They find 
+        museums, beaches, amusement parks, and restaurants. They both rate each from one to
+        five stars.
+      </p>
+      
+      <p>
+        By next week, the family has collected 200 pages. Flights, listings, attractions, 
+        restaurants, and travel guides are all connected to the same decision of which city
+        to visit. 
+      </p>
+      
+      <p>
+      Carol sees Dave's tree and notices that he keeps giving high ratings to Barcelona's tapas restaurants.
+      Dave notices that Carol loves Barcelona's beaches and attractions.  They agree on Barcelona.
+        Alice showed that Barcelona had the most expensive accommodation.  
+        Bob showed that flights to Barcelona were second-most expensive.
+        Sorting by cost, the cheapest options for both were in Athens.  
+      Sorting flights by durations showed that Athens saved 4 hours of layover each way.  That tipped the scales, 
+      and they chose Athens.
+      </p>
 
-      <h2>The Common Thread</h2>
-      <p>Current workflow: browser plus other tools.</p>
-      <p>Byblos workflow: browser becomes the workspace.</p>
-      <p>That is the real value proposition that ties all five examples together.</p>
     </article>
+    <section class="menu-section subpage-menu" aria-label="Menu">
+      <div class="menu-grid">
+        <section class="menu-group">
+          <h3>Features</h3>
+          <a href="annotations.html">Annotations</a>
+          <a href="sort-filter.html">Sort &amp; Filter</a>
+          <a href="the-tree.html">The Tree</a>
+          <a href="chat-and-tracker-inbox.html">Chat &amp; Tracker Inbox</a>
+          <a href="sharing-workspaces.html">Sharing Workspaces</a>
+        </section>
+
+        <section class="menu-group">
+          <h3>Why Byblos</h3>
+          <a href="value-thesis.html">Value Thesis</a>
+          <a href="compared-to-existing-tools.html">Compared to Existing Tools</a>
+          <a href="common-use-cases.html">Common Use Cases</a>
+        </section>
+
+        <section class="menu-group">
+          <h3>Trust</h3>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="faq.html">FAQ</a>
+          <a href="about-monklab.html">About Monklab</a>
+        </section>
+      </div>
+    </section>
   </main>
 </body>
 </html>

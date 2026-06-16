@@ -10,7 +10,11 @@ const steps = [
   },
   {
     badge: "Step 2",
-    title: "Click demote, the tree icon, in the annotation bar below.",
+    titleParts: [
+      "Click demote, ",
+      { icon: "assets/cedar-128.png", alt: "the tree icon" },
+      ", in the annotation bar below."
+    ],
     points: [
       "Notice the red outline around this page.",
       "Notice the promotion bar below.",
@@ -95,7 +99,24 @@ function renderStep(index) {
   currentStep = (index + steps.length) % steps.length;
   const step = steps[currentStep];
 
-  title.textContent = step.title;
+  if (step.titleParts) {
+    title.replaceChildren(
+      ...step.titleParts.map((part) => {
+        if (typeof part === "string") {
+          return document.createTextNode(part);
+        }
+
+        const icon = document.createElement("img");
+        icon.className = "tutorial-inline-icon";
+        icon.src = part.icon;
+        icon.alt = part.alt;
+        return icon;
+      })
+    );
+  } else {
+    title.textContent = step.title;
+  }
+
   badge.textContent = step.badge;
   mode.textContent = step.mode || "";
   mode.hidden = !step.mode;

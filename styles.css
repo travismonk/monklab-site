@@ -282,6 +282,10 @@ main {
   padding: 36px 0;
 }
 
+.subpage-menu {
+  margin-top: 28px;
+}
+
 .tutorial-modal[hidden] {
   display: none;
 }
@@ -384,6 +388,15 @@ main {
   font-size: clamp(24px, 5vw, 34px);
   line-height: 1.08;
   margin: 0 0 16px;
+}
+
+.tutorial-inline-icon {
+  display: inline-block;
+  height: 1em;
+  margin: 0 0.05em;
+  object-fit: contain;
+  vertical-align: -0.14em;
+  width: 1em;
 }
 
 .tutorial-points {
@@ -551,25 +564,23 @@ main {
 
 @media (max-width: 640px) {
   .site-header {
-    align-items: flex-start;
-    flex-direction: column;
+    align-items: center;
     gap: 8px;
     padding: 14px 18px;
   }
 
   .brand {
-    max-width: 100%;
+    max-width: calc(100% - 58px);
   }
 
   nav {
-    flex-wrap: wrap;
     gap: 12px;
   }
 
   .header-menu-panel {
     grid-template-columns: 1fr;
-    left: 0;
-    right: auto;
+    left: auto;
+    right: 0;
     width: calc(100vw - 36px);
   }
 
