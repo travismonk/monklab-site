@@ -1,8 +1,8 @@
 :root {
   color-scheme: dark;
-  --ink: #f4f7f1;
-  --muted: #adb8ad;
-  --line: rgba(224, 232, 220, 0.16);
+  --ink: #f7f7f4;
+  --muted: #c3c7c2;
+  --line: rgba(238, 240, 235, 0.18);
   --paper: #090d0a;
   --panel: rgba(18, 25, 20, 0.88);
   --panel-strong: rgba(24, 34, 27, 0.95);
