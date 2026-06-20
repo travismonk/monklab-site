@@ -387,6 +387,14 @@ main {
 .tutorial-real h3 {
   font-size: clamp(24px, 5vw, 34px);
   line-height: 1.08;
+  margin: 0 0 12px;
+}
+
+.tutorial-subheader {
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.35;
   margin: 0 0 16px;
 }
 
@@ -423,6 +431,16 @@ main {
   position: absolute;
   top: 10px;
   width: 6px;
+}
+
+.tutorial-link {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.tutorial-link:hover {
+  color: var(--accent);
 }
 
 .tutorial-controls {
