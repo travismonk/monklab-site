@@ -310,12 +310,12 @@ main {
 .tutorial-popup {
   display: flex;
   flex-direction: column;
-  height: min(640px, calc(100vh - 48px));
-  max-height: min(640px, calc(100vh - 48px));
-  max-width: 680px;
+  height: min(500px, calc(100vh - 48px));
+  max-height: min(500px, calc(100vh - 48px));
+  max-width: 600px;
   overflow: hidden;
   position: relative;
-  width: min(100%, 680px);
+  width: min(100%, 600px);
   z-index: 1;
 }
 
@@ -335,13 +335,20 @@ main {
 .modal-heading {
   display: grid;
   gap: 8px;
+  justify-items: start;
   min-width: 0;
 }
 
 .modal-heading h2 {
-  font-size: clamp(22px, 4vw, 30px);
+  font-size: clamp(22px, 3vw, 28px);
   line-height: 1.08;
   margin: 0;
+}
+
+.modal-heading .status-pill {
+  justify-self: start;
+  max-width: 100%;
+  width: max-content;
 }
 
 .close-button {
@@ -374,15 +381,15 @@ main {
   flex: 1;
   min-height: 0;
   overflow: hidden;
-  padding: 20px 22px 22px;
+  padding: 18px 20px 20px;
 }
 
 .tutorial-subheader {
   color: var(--ink);
-  font-size: clamp(20px, 3vw, 26px);
-  font-weight: 800;
-  line-height: 1.15;
-  margin: 0 0 18px;
+  font-size: clamp(17px, 2vw, 20px);
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 14px;
 }
 
 .tutorial-inline-icon {
@@ -421,7 +428,7 @@ main {
 }
 
 .tutorial-link {
-  color: var(--text);
+  color: var(--ink);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -562,8 +569,8 @@ main {
   }
 
   .tutorial-popup {
-    height: min(640px, calc(100vh - 32px));
-    max-height: min(640px, calc(100vh - 32px));
+    height: min(500px, calc(100vh - 32px));
+    max-height: min(500px, calc(100vh - 32px));
   }
 }
 
@@ -620,7 +627,7 @@ main {
   }
 
   .tutorial-subheader {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .tutorial-points {

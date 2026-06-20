@@ -7,7 +7,7 @@ const steps = [
       "Click the ⭐️ rating button on the bar below.",
       "See the ⭐️ badges? Your rating is now attached to this page.",
       "Come back tomorrow or next year.  It will still be there.",
-      "You can browse the internet, leaving notes, reactions, and measurements wherever you want.",
+      "You can browse the internet, and webpages remember what you leave on them.",
     ]
   },
   {
@@ -79,7 +79,7 @@ const steps = [
     title: "Byblos superpowers are opt-in with one click.",
     subheader: "Just promote the pages that matter.",
     points: [
-      "Click the <em>Promote</em> button below.",
+      "Click the ", <strong>Promote</strong>, " button below.",
       "Notice the green outline around this page.",
       "Notice the annotation bar below.",
       "Green outline + annotation bar = Byblos tab.",
@@ -96,7 +96,7 @@ const steps = [
       "Important page in a Chrome tab?  Promote it.",
       "Byblos superpowers return.",
       "Use Chrome tabs when you want.",
-      "Use Byblos tabs when it helps."
+      "Use Byblos tabs when it helps.  Happy browsing - Monklab"
     ]
   },
 ];
