@@ -80,25 +80,20 @@
     </section>
   </main>
 
-  <div class="tutorial-modal" id="tutorial-modal" role="dialog" aria-modal="true" aria-labelledby="tutorial-title" hidden>
+  <div class="tutorial-modal" id="tutorial-modal" role="dialog" aria-modal="true" aria-labelledby="tutorial-step-title" hidden>
     <div class="tutorial-backdrop" data-close-tutorial></div>
     <section class="tutorial-popup">
       <div class="modal-header">
-        <div>
-          <p class="eyebrow">Demonstration</p>
-          <h2 id="tutorial-title">Byblos tabs vs. Chrome tabs</h2>
+        <div class="modal-heading">
+          <span class="status-pill" id="tutorial-badge">Step 1</span>
+          <h2 id="tutorial-step-title">You are in a Byblos tab.</h2>
         </div>
         <button class="close-button" type="button" aria-label="Close tutorial" data-close-tutorial>Close</button>
       </div>
 
       <div class="tutorial-card">
         <div class="tutorial-real" aria-live="polite">
-          <div class="tutorial-status">
-            <span class="status-pill" id="tutorial-badge">Step 1</span>
-            <span class="tutorial-mode" id="tutorial-mode">Byblos tab</span>
-          </div>
-          <h3 id="tutorial-step-title">You are in a Byblos tab.</h3>
-          <p class="tutorial-subheader" id="tutorial-step-subheader" hidden></p>
+          <h3 class="tutorial-subheader" id="tutorial-step-subheader" hidden></h3>
           <ul class="tutorial-points" id="tutorial-points">
             <li>Green outline and annotation bar = Byblos tab.</li>
             <li>Navigations are saved in the tree.</li>

@@ -7,7 +7,7 @@ const steps = [
       "Click the ⭐️ rating button on the bar below.",
       "See the ⭐️ badges? Your rating is now attached to this page.",
       "Come back tomorrow or next year.  It will still be there.",
-      "Now webpages can be sorted and filtered by whatever you care about.",
+      "You can browse the internet, leaving notes, reactions, and measurements wherever you want.",
     ]
   },
   {
@@ -40,10 +40,10 @@ const steps = [
     subheader: "Every webpage becomes a collaborative workspace.",
     points: [
       "Share your entire browsing session with a single string of text.",
-      "See where other people went, what they found, and what they thought about it.",
+      "See where other people are going, what they are finding, and what they are thinking.",
+      "Everyone's activity appears instantly. No saving. No syncing. No sending updates.  Live.",
       "Continue one of their branches.  Point each other in new directions.",
       "Talk to each other directly on the webpages themselves.",
-      "Stop sharing links.  Share the whole browsing session as one collaborative, living document."
     ]
   },
   {
@@ -102,9 +102,9 @@ const steps = [
 ];
 
 const title = document.querySelector("#tutorial-step-title");
+const subheader = document.querySelector("#tutorial-step-subheader");
 const points = document.querySelector("#tutorial-points");
 const badge = document.querySelector("#tutorial-badge");
-const mode = document.querySelector("#tutorial-mode");
 const next = document.querySelector("#next-step");
 const prev = document.querySelector("#prev-step");
 const dotsContainer = document.querySelector(".step-dots");
@@ -169,8 +169,8 @@ function renderStep(index) {
   }
 
   badge.textContent = step.badge;
-  mode.textContent = step.mode || "";
-  mode.hidden = !step.mode;
+  subheader.textContent = step.subheader || "";
+  subheader.hidden = !step.subheader;
   points.replaceChildren(
     ...step.points.map((point) => {
       const item = document.createElement("li");
