@@ -36,14 +36,14 @@ const steps = [
   },
   {
     badge: "Superpower 4",
-    title: "Browsing is now multiplayer.",
-    subheader: "Every webpage becomes a collaborative workspace.",
+    title: "Browsing can be multiplayer.",
+    subheader: "Every webpage can become a collaborative workspace.",
     points: [
-      "Share your entire browsing session with a single string of text.",
-      "See where other people are going, what they are finding, and what they are thinking.",
-      "Everyone's activity appears instantly. No saving. No syncing. No sending updates.  Live.",
-      "Continue one of their branches.  Point each other in new directions.",
+      "Share your entire browsing session by sending a key to whomever you want.",
+      "See where your invitees navigate, what they find that you missed, and what they are thinking.",
+      "Browsing is live for all invited parties. No saving, syncing, or sending updates.",
       "Talk to each other directly on the webpages themselves.",
+      "You control session privacy.  Nothing is shared until you send a key."
     ]
   },
   {
