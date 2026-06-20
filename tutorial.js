@@ -79,7 +79,11 @@ const steps = [
     title: "Byblos superpowers are opt-in with one click.",
     subheader: "Just promote the pages that matter.",
     points: [
-      "Click the ", <strong>Promote</strong>, " button below.",
+      [
+        "Click the ",
+        { strong: "Promote" },
+        " button below."
+      ],
       "Notice the green outline around this page.",
       "Notice the annotation bar below.",
       "Green outline + annotation bar = Byblos tab.",
@@ -136,6 +140,20 @@ function buildPointContent(point) {
   return point.map((part) => {
     if (typeof part === "string") {
       return document.createTextNode(part);
+    }
+
+    if (part.strong) {
+      const strong = document.createElement("strong");
+      strong.textContent = part.strong;
+      return strong;
+    }
+
+    if (part.icon) {
+      const icon = document.createElement("img");
+      icon.className = "tutorial-inline-icon";
+      icon.src = part.icon;
+      icon.alt = part.alt;
+      return icon;
     }
 
     const link = document.createElement("a");
