@@ -140,10 +140,28 @@
       <h2>Can other people see my browsing history?</h2>
       <p>
         Not automatically. Only pages opened in a Byblos tab and stored in
-        shared workspaces are visible to collaborators who have its key.
+        shared workspaces are visible, and only to people who have its key.
         Ordinary Chrome browsing remains ordinary Chrome browsing.  Workspaces
         that you have not shared are only backed up to Cloudflare and not shared
         with anyone else.
+      </p>
+
+      <h2>Why does Byblos request content injection permissions for all URLs?</h2>
+      <p>
+        Byblos needs access to webpages for two reasons.
+        First, to determine whether your clicks represent genuine navigations that 
+        should become nodes in a Byblos tree.
+        Second, to display Byblos UI such as the annotation bar.
+        Byblos does not scrape webpages for information, collect page content, or 
+        build profiles of your browsing. The page DOM is inspected only to help determine 
+        navigation intent and is never saved, synced, or transmitted anywhere. 
+        Once the navigation decision is made, the DOM is discarded.
+      </p>
+
+      <h2>Does Byblos keep records of my browsing in Chrome tabs?</h2>
+      <p>
+        No.  Chrome tabs are ordinary Chrome tabs. Byblos does not record, store, sync, 
+        or share your browsing activity in Chrome tabs.
       </p>
 
       <h2>Why not just use bookmarks?</h2>
@@ -152,6 +170,32 @@
         annotations, navigation history, and decision-making information
         surrounding those pages.
       </p>
+
+      <h2>Does Byblos keep records of my browsing when I am not using the extension?</h2>
+      
+      <p>No.</p>
+      
+      <p>
+        When Byblos is not being used, it does not track where you browse,
+        what pages you visit, or what content you view.
+      </p>
+      
+      <p>
+        The extension maintains a simple navigation-count detector used to decide
+        whether a notification might be helpful. It only counts navigation events
+        within a short time window and does not store URLs, page titles, page
+        contents, domains, search terms, or browsing history.
+      </p>
+      
+      <p>
+        The detector exists solely to answer:
+      </p>
+      
+      <blockquote>
+        Is this user currently deep in a browsing session where Byblos might help?
+      </blockquote>
+      
+      <p>Nothing more.</p>
 
       <h2>Why not just use Discord, Slack, or WhatsApp?</h2>
       <p>

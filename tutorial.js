@@ -39,11 +39,11 @@ const steps = [
     title: "Browsing can be multiplayer.",
     subheader: "Every webpage can become a collaborative workspace.",
     points: [
-      "Share your entire browsing session by sending a key to whomever you want.",
-      "See where your invitees navigate, what they find that you missed, and what they are thinking.",
-      "Browsing is live for all invited parties. No saving, syncing, or sending updates.",
-      "Talk to each other directly on the webpages themselves.",
-      "You control session privacy.  Nothing is shared until you send a key."
+      "Share your entire browsing session by sharing a key with whomever you want.",
+      "Invitees can join only that session, or 'workspace.'",
+      "The session is live for all invited parties.  No saving, syncing, or sending updates.",
+      "Navigate the internet together, and talk to each other directly on webpages.",
+      "Browsing is private by default.  Your browsing is only visible 1) in workspaces you shared, 2) in Byblos tabs, 3) to people you sent the key to."
     ]
   },
   {
@@ -71,7 +71,7 @@ const steps = [
       "Doomscrolling.  News articles.  Random searches.  Rabbit holes.",
       "Some pages you don't want to share or remember.",
       "Use Chrome tabs for these pages.",
-      "Chrome tabs remember nothing.",
+      "Chrome tabs remember nothing.  Browsing is always private and throwaway as normal.",
     ]
   },
   {
