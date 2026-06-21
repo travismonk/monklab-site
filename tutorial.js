@@ -39,10 +39,10 @@ const steps = [
     title: "Byblos can make browsing multiplayer.",
     subheader: "Every webpage can become a collaborative workspace.",
     points: [
-      "Share your entire browsing session by sharing a key with whomever you want.",
+      "Share your entire browsing session with anyone by sending a key.",
       "Invitees can join only that session, or 'workspace.'",
-      "The session is live for all invited parties.  No saving, syncing, or sending updates.",
-      "Navigate the internet together, and talk to each other directly on webpages.",
+      "The session is live for all invited parties.  No saving or syncing.",
+      "Navigate the internet together, and chat directly on webpages.",
       "Browsing is private by default.  Your browsing is only visible 1) in workspaces you shared, 2) in Byblos tabs, 3) to people you sent the key to."
     ]
   },
