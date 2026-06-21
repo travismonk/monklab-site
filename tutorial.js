@@ -69,9 +69,9 @@ const steps = [
     points: [
       "Some pages are disposable.",
       "Doomscrolling.  News articles.  Random searches.  Rabbit holes.",
-      "Some pages you don't want to share.",
+      "Some pages you don't want to share or remember.",
       "Use Chrome tabs for these pages.",
-      "Chrome tabs remember nothing about pages.",
+      "Chrome tabs remember nothing.",
     ]
   },
   {
