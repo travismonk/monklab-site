@@ -100,7 +100,7 @@ const steps = [
       "Important page in a Chrome tab?  Promote it.",
       "Byblos superpowers return.",
       "Use Chrome tabs when you want.",
-      "Use Byblos tabs when it helps.  Happy browsing - Monklab"
+      "Use Byblos tabs when it helps."
     ]
   },
 ];
