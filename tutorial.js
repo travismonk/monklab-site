@@ -7,12 +7,12 @@ const steps = [
       "Click the ⭐️ rating button on the bar below.",
       "See the ⭐️ badges? Your rating is now attached to this page.",
       "Come back tomorrow or next year.  It will still be there.",
-      "You can browse the internet, and webpages remember what you leave on them.",
+      "Browse the internet as normal, and webpages remember what you leave on them.",
     ]
   },
   {
     badge: "Superpower 2",
-    title: "Now the internet is queryable by your criteria.",
+    title: "Byblos lets you query the internet however you want.",
     subheader: "Google indexes webpages.  Byblos indexes what people thought about them.",
     points: [
       "Show me the restaurants all three of us hearted.",
@@ -24,7 +24,7 @@ const steps = [
   },
   {
     badge: "Superpower 3",
-    title: "You are inside someone else's browsing session.",
+    title: "Byblos can put you inside someone else's browsing session.",
     subheader: "You can inherit or continue a browsing session instead of starting from scratch.",
     points: [
       "If you imported a workspace, the tree on the right was built by someone else.",
@@ -36,7 +36,7 @@ const steps = [
   },
   {
     badge: "Superpower 4",
-    title: "Browsing can be multiplayer.",
+    title: "Byblos can make browsing multiplayer.",
     subheader: "Every webpage can become a collaborative workspace.",
     points: [
       "Share your entire browsing session by sharing a key with whomever you want.",
@@ -71,7 +71,7 @@ const steps = [
       "Doomscrolling.  News articles.  Random searches.  Rabbit holes.",
       "Some pages you don't want to share or remember.",
       "Use Chrome tabs for these pages.",
-      "Chrome tabs remember nothing.  Browsing is always private and throwaway as normal.",
+      "Chrome tabs remember nothing.  Browsing is private and throwaway as normal.",
     ]
   },
   {
@@ -90,19 +90,7 @@ const steps = [
       "You have promoted the Chrome tab back into a Byblos tab.",
       "Notice your rating ⭐️ is back."
     ]
-  },
-  {
-    badge: "No catches",
-    title: "Switch any tab whenever you want.",
-    subheader: "Superpowers come and go with one click.",
-    points: [
-      "Disposable page in a Byblos tab?  Demote it.",
-      "Important page in a Chrome tab?  Promote it.",
-      "Byblos superpowers return.",
-      "Use Chrome tabs when you want.",
-      "Use Byblos tabs when it helps."
-    ]
-  },
+  }
 ];
 
 const title = document.querySelector("#tutorial-step-title");
