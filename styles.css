@@ -204,6 +204,20 @@ main {
   margin: 18px 0 28px;
 }
 
+.hero-support {
+  color: var(--muted);
+  font-size: 18px;
+  max-width: 620px;
+}
+
+.hero-support p {
+  margin: 0 0 14px;
+}
+
+.hero-support p:last-child {
+  margin-bottom: 0;
+}
+
 .eyebrow {
   color: var(--accent);
   font-size: 13px;
