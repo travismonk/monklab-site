@@ -79,11 +79,30 @@ a {
 }
 
 .brand {
-  font-size: 18px;
-  font-weight: 750;
-  line-height: 1.2;
-  max-width: min(58vw, 520px);
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  display: inline-flex;
+  height: 40px;
+  justify-content: center;
   text-decoration: none;
+  width: 44px;
+}
+
+.brand svg {
+  fill: none;
+  height: 21px;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.9;
+  width: 21px;
+}
+
+.brand:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 nav {
@@ -200,7 +219,7 @@ main {
 }
 
 .hero-line {
-  color: var(--muted);
+  color: var(--accent);
   font-size: 24px;
   margin: 18px 0 0;
 }
@@ -209,7 +228,6 @@ main {
   color: var(--muted);
   font-size: 18px;
   grid-column: 1 / -1;
-  max-width: 620px;
 }
 
 .hero-support p {
@@ -217,6 +235,8 @@ main {
 }
 
 .hero-support p:last-child {
+  color: var(--accent);
+  font-weight: 700;
   margin-bottom: 0;
 }
 
