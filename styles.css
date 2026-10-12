@@ -185,7 +185,8 @@ main {
 .hero {
   align-items: center;
   display: grid;
-  gap: 48px;
+  column-gap: 48px;
+  row-gap: 38px;
   grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
   min-height: 520px;
   padding: 72px 0 52px;
@@ -201,12 +202,13 @@ main {
 .hero-line {
   color: var(--muted);
   font-size: 24px;
-  margin: 18px 0 28px;
+  margin: 18px 0 0;
 }
 
 .hero-support {
   color: var(--muted);
   font-size: 18px;
+  grid-column: 1 / -1;
   max-width: 620px;
 }
 
@@ -266,6 +268,7 @@ main {
 }
 
 .tutorial-launch {
+  align-self: center;
   font-size: clamp(24px, 4vw, 42px);
   min-height: 180px;
   padding: 22px 28px;
@@ -580,6 +583,10 @@ main {
   .hero {
     min-height: auto;
     padding-top: 48px;
+  }
+
+  .hero-support {
+    grid-column: auto;
   }
 
   .tutorial-popup {
