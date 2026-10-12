@@ -206,9 +206,16 @@ main {
   display: grid;
   column-gap: 48px;
   row-gap: 38px;
+  grid-template-areas:
+    "copy demo"
+    "support support";
   grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
   min-height: 520px;
   padding: 72px 0 52px;
+}
+
+.hero-copy {
+  grid-area: copy;
 }
 
 .hero h1 {
@@ -227,7 +234,8 @@ main {
 .hero-support {
   color: var(--muted);
   font-size: 18px;
-  grid-column: 1 / -1;
+  grid-area: support;
+  width: 100%;
 }
 
 .hero-support p {
@@ -289,7 +297,9 @@ main {
 
 .tutorial-launch {
   align-self: center;
-  font-size: clamp(24px, 4vw, 42px);
+  font-size: clamp(20px, 2.4vw, 30px);
+  grid-area: demo;
+  line-height: 1.15;
   min-height: 180px;
   padding: 22px 28px;
   width: 100%;
@@ -601,12 +611,12 @@ main {
   }
 
   .hero {
+    grid-template-areas:
+      "copy"
+      "demo"
+      "support";
     min-height: auto;
     padding-top: 48px;
-  }
-
-  .hero-support {
-    grid-column: auto;
   }
 
   .tutorial-popup {
