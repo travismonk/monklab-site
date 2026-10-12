@@ -1,6 +1,31 @@
 const steps = [
   {
     badge: "Superpower 1",
+    title: "Byblos can put you inside someone else's browsing session.  Or someone else in yours.",
+    subheader: "Explore how someone else browsed the web, and see what they left behind.",
+    points: [
+      "Look at the tree on the right.  Someone else built it.",
+      "The tree is a navigable record of how someone explored the internet.",
+      "Click on a node.  You'll visit that webpage.",
+      "Click another node.  Follow their investigation, one webpage at a time.",
+    ]
+  },
+  {
+    badge: "Superpower 2",
+    title: "Byblos makes browsing multiplayer, for humans and agents.",
+    subheader: "You're not just exploring someone else's investigation. You can contribute to it.",
+    points: [
+      "Look at the annotations and chat on the left.  Every webpage has its own conversation.",
+      "When you click a node in the tree, Byblos loads the conversation for that webpage.",
+      "You can leave your own notes and messages on any page.",
+      "To collaborate live, click Share & Permissions and verify a Google account.",
+      "Request Silver or Gold permission from the creator to share your contributions with everyone.",
+      "You can also launch swarms of agents to browse webpages and chat on them with you.",
+      "Click the 🤖 agent button below, connect an API key, give them a prompt, and unleash a swarm."
+    ]
+  },
+  {
+    badge: "Superpower 3",
     title: "Byblos gives webpages memory.",
     subheader: "So you can organize the internet however you want.",
     points: [
@@ -11,39 +36,16 @@ const steps = [
     ]
   },
   {
-    badge: "Superpower 2",
+    badge: "Superpower 4",
     title: "Byblos lets you query the internet however you want.",
     subheader: "Google indexes webpages.  Byblos indexes what people thought about them.",
     points: [
-      "Show me the restaurants all three of us hearted.",
-      "Show me the pages Alice and I chatted on last month, but not Bob.",
-      "Show me the pages with keyword countertops, sorted by lead time.",
-      "Show me the Airbnb listings I flamed, sorted by distance to the festival.",
+      "Click Sort/Filter near the upper-left and filter by ⭐️ rating.",
+      "See the page you rated ⭐️ appear in the Annotated, Sorted, and Filtered window above.",
+      "You can now search webpages by what people thought about them.",
+      "Show me the pages with keyword 'countertops', sorted by lead time.",
+      "Show me the Airbnb listings I 🔥 flamed, sorted by 💸 cost.",
       "All because webpages now remember what you and others thought about them."
-    ]
-  },
-  {
-    badge: "Superpower 3",
-    title: "Byblos can put you inside someone else's browsing session.",
-    subheader: "You can inherit or continue a browsing session instead of starting from scratch.",
-    points: [
-      "If you imported a workspace, the tree on the right was built by someone else.",
-      "The tree is a navigable record of how someone explored the internet.",
-      "You can see what they thought about each page as they navigated.",
-      "Click nodes to revisit pages and see what they left on them.",
-      "Byblos remembers not only what you thought about a page, but how you got there."
-    ]
-  },
-  {
-    badge: "Superpower 4",
-    title: "Byblos can make browsing multiplayer.",
-    subheader: "Every webpage can become a collaborative workspace.",
-    points: [
-      "Share your entire browsing session with anyone by sending a key.",
-      "Invitees can join only that session, or 'workspace.'",
-      "The session is live for all invited parties.  No saving or syncing.",
-      "Navigate the internet together, and chat directly on webpages.",
-      "Browsing is private by default.  Your browsing is only visible 1) in workspaces you shared, 2) in Byblos tabs, 3) to people you sent the key to."
     ]
   },
   {
